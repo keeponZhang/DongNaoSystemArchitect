@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".MainActivity">
+
+	<Button
+		android:textAllCaps="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="createThreadPoolExecutor"
+		android:onClick="createThreadPoolExecutor"
+		/>
+
+	<Button
+		android:textAllCaps="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="createFixedThreadPool"
+		android:onClick="createFixedThreadPool"
+		/>
+	<Button
+		android:textAllCaps="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="createCachedThreadPool"
+		android:onClick="createCachedThreadPool"
+		/>
+	<Button
+		android:textAllCaps="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="createSingleThreadPool"
+		android:onClick="createSingleThreadPool"
+		/>
+	<Button
+		android:textAllCaps="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="createScheduledThreadPool"
+		android:onClick="createScheduledThreadPool"
+		/>
+	<Button
+		android:textAllCaps="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="createPriorityThreadPool"
+		android:onClick="createPriorityThreadPool"
+		/>
+	<Button
+		android:textAllCaps="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="threadPoolExecute"
+		android:onClick="threadPoolExecute"
+		/>
+
+	<Button
+		android:textAllCaps="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="getActiveCount"
+		android:onClick="getActiveCount"
+		/>
+</LinearLayout>

@@ -1,2 +1,2 @@
-include ':volleydongnao'
+include ':volleydongnao', ':threadpool'
 include ':dongnaoSqlite'

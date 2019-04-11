@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DongNaoSystemArchitect.iml" filepath="$PROJECT_DIR$/DongNaoSystemArchitect.iml" />
       <module fileurl="file://$PROJECT_DIR$/dongnaoSqlite/dongnaoSqlite.iml" filepath="$PROJECT_DIR$/dongnaoSqlite/dongnaoSqlite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadpool/threadpool.iml" filepath="$PROJECT_DIR$/threadpool/threadpool.iml" />
       <module fileurl="file://$PROJECT_DIR$/volleydongnao/volleydongnao.iml" filepath="$PROJECT_DIR$/volleydongnao/volleydongnao.iml" />
     </modules>
   </component>

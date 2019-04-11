@@ -31,6 +31,7 @@ public class BaseDaoFactory {
         sqliteDatabasePath= file.getAbsolutePath()+"/user.db";
         openDatabase();
     }
+    //userDao
     public  synchronized  <T extends  BaseDao<M>,M> T
     getDataHelper(Class<T> clazz,Class<M> entityClass)
     {
@@ -52,6 +53,7 @@ public class BaseDaoFactory {
         return (T) baseDao;
     }
 
+    //PhotoDao或者DownloadDao（不同用户获取的是不同用户的dao）
     public  synchronized  <T extends  BaseDao<M>,M> T
     getUserHelper(Class<T> clazz,Class<M> entityClass)
     {
