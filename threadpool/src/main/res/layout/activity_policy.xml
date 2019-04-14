@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAllCaps="false"
+			android:text="discardPolicyDemo"
+			android:onClick="discardPolicyDemo"/>
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAllCaps="false"
+		android:text="discardOldestPolicyDemo"
+		android:onClick="discardOldestPolicyDemo"/>
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAllCaps="false"
+		android:text="abortPolicyDemo"
+		android:onClick="abortPolicyDemo"/>
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAllCaps="false"
+		android:text="callerRunsPolicyDemo"
+		android:onClick="callerRunsPolicyDemo"/>
+</LinearLayout>

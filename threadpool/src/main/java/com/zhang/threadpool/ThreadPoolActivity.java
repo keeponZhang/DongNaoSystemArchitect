@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.zhang.threadpool.asynTask.DownloadTask;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -14,8 +16,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class MainActivity extends AppCompatActivity {
-	private static final String TAG = "MainActivity";
+public class ThreadPoolActivity extends AppCompatActivity {
+	private static final String TAG = "ThreadPoolActivity";
 	private ThreadPoolExecutor mThreadPoolExecutor;
 	private static final RejectedExecutionHandler defaultHandler =
 			new ThreadPoolExecutor.AbortPolicy();
@@ -177,6 +179,8 @@ public class MainActivity extends AppCompatActivity {
 		}
 	}
 
+
+
 	//常见的阻塞队列有下列7种：
 	/*ArrayBlockingQueue ：一个由数组结构组成的有界阻塞队列。
 	LinkedBlockingQueue ：一个由链表结构组成的有界阻塞队列。
@@ -194,4 +198,14 @@ public class MainActivity extends AppCompatActivity {
 	5.beforeExecute() - 任务执行前执行的方法
 	6.afterExecute() -任务执行结束后执行的方法
 	7.terminated() -线程池关闭后执行的方法*/
+
+//	AsyncTask的实例化只能在主线程，Handler可以随意，只和Looper有关系
+	public void asynTask(View view) {
+		// execute(Params... params)
+		DownloadTask downloadTask = new DownloadTask();
+		downloadTask.execute();
+		downloadTask.cancel(true);
+		//		不报错，params类型即使不是void
+//		new DownloadTask2().execute();
+	}
 }

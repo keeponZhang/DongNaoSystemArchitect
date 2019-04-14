@@ -37,8 +37,12 @@ public class FutureAndFutureTaskActivity extends AppCompatActivity {
 	private static final String TAG = "FutureAndFutureTaskActi";
 	public void callableAndFuture(View view) {
 		ExecutorService executor = Executors.newCachedThreadPool();
-		Task task = new Task();
+		CallTask task = new CallTask();
 		Future<Integer> result = executor.submit(task);
+
+//		executor如果submit的是RunnableTask，是无法获取返回值的
+//		RunnableTask runnableTask = new RunnableTask();
+//		Future<?> submit = executor.submit(runnableTask);
 		executor.shutdown();
 
 		try {
@@ -64,13 +68,13 @@ public class FutureAndFutureTaskActivity extends AppCompatActivity {
 	public void callableAndFutureTask(View view) {
 		//第一种方式
 		ExecutorService executor = Executors.newCachedThreadPool();
-		Task task = new Task();
+		CallTask task = new CallTask();
 		FutureTask<Integer> futureTask = new FutureTask<Integer>(task);
 		executor.submit(futureTask);
 		executor.shutdown();
 
 		//第二种方式，注意这种方式和第一种方式效果是类似的，只不过一个使用的是ExecutorService，一个使用的是Thread
-        /*Task task = new Task();
+        /*CallTask task = new CallTask();
         FutureTask<Integer> futureTask = new FutureTask<Integer>(task);
         Thread thread = new Thread(futureTask);
         thread.start();*/

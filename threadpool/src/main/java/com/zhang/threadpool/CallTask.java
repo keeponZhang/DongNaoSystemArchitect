@@ -2,7 +2,7 @@ package com.zhang.threadpool;
 
 import java.util.concurrent.Callable;
 
-class Task implements Callable<Integer> {
+class CallTask implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {
         System.out.println("子线程在进行计算");
