@@ -1,4 +1,4 @@
-package com.dongnao.iterator;
+package com.zhang.designpattern.iterator;
 
 public class Client {
 	public static void main(String[] args) {

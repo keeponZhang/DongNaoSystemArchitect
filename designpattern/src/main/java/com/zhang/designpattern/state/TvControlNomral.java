@@ -1,4 +1,4 @@
-package com.dongnao.state;
+package com.zhang.designpattern.state;
 /**
  * 操控电视类
  * @author Administrator

@@ -1,4 +1,4 @@
-package com.dongnao.iterator;
+package com.zhang.designpattern.iterator;
 /**
  * 抽象迭代接口
  * @author Administrator

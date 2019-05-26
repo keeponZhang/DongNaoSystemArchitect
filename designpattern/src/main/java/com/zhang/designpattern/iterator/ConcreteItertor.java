@@ -1,4 +1,4 @@
-package com.dongnao.iterator;
+package com.zhang.designpattern.iterator;
 
 import java.util.ArrayList;
 import java.util.List;

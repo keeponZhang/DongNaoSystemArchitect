@@ -8,5 +8,6 @@ package com.zhang.designpattern.stategy;
  * @更新者 $$Author$$
  * @更新时间 $$Date$$
  */
-public interface StrategyIngerface {
+public interface Strategy {
+	public double stategyInterface(double price);
 }

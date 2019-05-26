@@ -9,4 +9,9 @@ package com.zhang.designpattern.stategy;
  * @更新时间 $$Date$$
  */
 public class Strategy1 implements Strategy {
+	@Override
+	public double stategyInterface(double price) {
+		//返回高级会员打折后的价格
+		return price*0.7;
+	}
 }

@@ -9,4 +9,5 @@ package com.zhang.designpattern.stategy;
  * @更新时间 $$Date$$
  */
 public class Person {
+	int age;
 }

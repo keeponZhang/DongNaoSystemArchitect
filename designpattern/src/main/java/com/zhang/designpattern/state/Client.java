@@ -1,4 +1,4 @@
-package com.dongnao.state;
+package com.zhang.designpattern.state;
 
 public class Client {
 		public static void main(String[] args) {

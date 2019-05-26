@@ -9,4 +9,8 @@ package com.zhang.designpattern.stategy;
  * @更新时间 $$Date$$
  */
 public class Client {
+	public static  void main(String[] args){
+		Strategy strategy = new Strategy1();
+		strategy.stategyInterface(22);
+	}
 }

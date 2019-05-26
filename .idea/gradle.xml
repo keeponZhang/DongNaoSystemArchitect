@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/designpattern" />
             <option value="$PROJECT_DIR$/dongnaoSqlite" />
             <option value="$PROJECT_DIR$/threadpool" />
             <option value="$PROJECT_DIR$/volleydongnao" />
